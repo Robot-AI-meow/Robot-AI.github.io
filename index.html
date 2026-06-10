@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="个人简历 — 产品 / AI / 工程" />
+    <title>你的名字 · Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Personal Resume</p>
+          <h1>你的名字</h1>
+          <p class="tagline">一句话介绍自己，例如：AI 产品 · Agent 系统 · 用户体验</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:you@example.com">联系我</a>
+            <a class="btn btn-ghost" href="#experience">查看经历</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <dl>
+            <div>
+              <dt>所在地</dt>
+              <dd>城市，国家</dd>
+            </div>
+            <div>
+              <dt>邮箱</dt>
+              <dd><a href="mailto:you@example.com">you@example.com</a></dd>
+            </div>
+            <div>
+              <dt>链接</dt>
+              <dd>
+                <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+                ·
+                <a href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">LinkedIn</a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </header>
+
+      <main>
+        <section class="section" id="about">
+          <h2>关于我</h2>
+          <p>
+            在这里写一段简短的个人介绍。可以涵盖你的专业背景、兴趣方向，以及你希望别人如何记住你。
+            建议 2–3 句话，突出与你目标岗位最相关的能力。
+          </p>
+        </section>
+
+        <section class="section" id="experience">
+          <h2>工作经历</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 — 至今</span>
+                <span class="timeline-org">公司名称</span>
+              </div>
+              <h3>职位名称</h3>
+              <ul>
+                <li>用可量化的成果描述你的核心贡献，例如提升了 XX 指标。</li>
+                <li>第二条亮点：负责某模块的设计与落地。</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022 — 2024</span>
+                <span class="timeline-org">上一家公司</span>
+              </div>
+              <h3>职位名称</h3>
+              <ul>
+                <li>描述你在该岗位上的关键项目或职责。</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <h2>技能</h2>
+          <div class="skill-grid">
+            <div class="skill-card">
+              <h3>产品 & 设计</h3>
+              <p>用户研究 · 原型设计 · 需求分析</p>
+            </div>
+            <div class="skill-card">
+              <h3>AI & Agent</h3>
+              <p>Prompt Engineering · MCP · 多智能体系统</p>
+            </div>
+            <div class="skill-card">
+              <h3>工程</h3>
+              <p>TypeScript · Python · 前端开发</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2>项目</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>项目名称</h3>
+              <p>一句话说明项目是什么、解决了什么问题。</p>
+              <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
+            </article>
+            <article class="project-card">
+              <h3>另一个项目</h3>
+              <p>可以附上技术栈或你的角色，例如：独立开发 / 产品设计。</p>
+              <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <h2>教育背景</h2>
+          <div class="edu-item">
+            <div>
+              <h3>学校名称</h3>
+              <p>专业 · 学位</p>
+            </div>
+            <span class="timeline-date">2018 — 2022</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> 你的名字 · Built with Vite</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
