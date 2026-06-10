@@ -2,15 +2,13 @@
 
 个人简历单页，部署到 **GitHub Pages**。
 
-仓库：[Robot-AI-meow/Robot-AI.github.io](https://github.com/Robot-AI-meow/Robot-AI.github.io)
+仓库：[Robot-AI-meow/Robot-AI-meow.github.io](https://github.com/Robot-AI-meow/Robot-AI-meow.github.io)
 
 线上地址：
 
 ```text
-https://robot-ai-meow.github.io/Robot-AI.github.io/
+https://robot-ai-meow.github.io
 ```
-
-> 若把仓库改名为 `Robot-AI-meow.github.io`，地址可简化为 `https://robot-ai-meow.github.io`
 
 ## 推送 / 更新
 
@@ -18,7 +16,7 @@ https://robot-ai-meow.github.io/Robot-AI.github.io/
 cd "/Users/liyuan/Documents/Obsidian Vault/personal-resume"
 git add .
 git commit -m "update resume"
-git remote set-url origin git@github.com:Robot-AI-meow/Robot-AI.github.io.git
+git remote set-url origin git@github.com:Robot-AI-meow/Robot-AI-meow.github.io.git
 git push -u origin main
 ```
 
