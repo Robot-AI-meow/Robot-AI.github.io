@@ -4,136 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="个人简历 — 产品 / AI / 工程" />
-    <title>你的名字 · Resume</title>
+    <meta name="description" content="个人简历" />
+    <title>Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">Personal Resume</p>
-          <h1>你的名字</h1>
-          <p class="tagline">一句话介绍自己，例如：AI 产品 · Agent 系统 · 用户体验</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:you@example.com">联系我</a>
-            <a class="btn btn-ghost" href="#experience">查看经历</a>
+    <div class="resume">
+      <section class="block">
+        <h2 class="section-title">教育背景</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">布鲁塞尔自由大学 - 高等工程师学院 - 计算机科学与工程</div>
+            <div class="entry-meta">2017.09 – 2020.07</div>
           </div>
         </div>
-        <aside class="hero-card">
-          <dl>
-            <div>
-              <dt>所在地</dt>
-              <dd>城市，国家</dd>
-            </div>
-            <div>
-              <dt>邮箱</dt>
-              <dd><a href="mailto:you@example.com">you@example.com</a></dd>
-            </div>
-            <div>
-              <dt>链接</dt>
-              <dd>
-                <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
-                ·
-                <a href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">LinkedIn</a>
-              </dd>
-            </div>
-          </dl>
-        </aside>
-      </header>
-
-      <main>
-        <section class="section" id="about">
-          <h2>关于我</h2>
-          <p>
-            在这里写一段简短的个人介绍。可以涵盖你的专业背景、兴趣方向，以及你希望别人如何记住你。
-            建议 2–3 句话，突出与你目标岗位最相关的能力。
-          </p>
-        </section>
-
-        <section class="section" id="experience">
-          <h2>工作经历</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-date">2024 — 至今</span>
-                <span class="timeline-org">公司名称</span>
-              </div>
-              <h3>职位名称</h3>
-              <ul>
-                <li>用可量化的成果描述你的核心贡献，例如提升了 XX 指标。</li>
-                <li>第二条亮点：负责某模块的设计与落地。</li>
-              </ul>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-date">2022 — 2024</span>
-                <span class="timeline-org">上一家公司</span>
-              </div>
-              <h3>职位名称</h3>
-              <ul>
-                <li>描述你在该岗位上的关键项目或职责。</li>
-              </ul>
-            </article>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">北京航空航天大学 - 中法工程师学院 - 数学与应用数学</div>
+            <div class="entry-meta">2013.09 – 2017.06</div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section" id="skills">
-          <h2>技能</h2>
-          <div class="skill-grid">
-            <div class="skill-card">
-              <h3>产品 & 设计</h3>
-              <p>用户研究 · 原型设计 · 需求分析</p>
-            </div>
-            <div class="skill-card">
-              <h3>AI & Agent</h3>
-              <p>Prompt Engineering · MCP · 多智能体系统</p>
-            </div>
-            <div class="skill-card">
-              <h3>工程</h3>
-              <p>TypeScript · Python · 前端开发</p>
-            </div>
+      <section class="block">
+        <h2 class="section-title">工作经历</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">大语言模型 - 代码生成方向 - 模型 RL 训练、Agent</div>
+            <div class="entry-meta">2024.09 – 至今&nbsp;&nbsp;微软温哥华</div>
           </div>
-        </section>
+          <ul>
+            <li><strong>Software AI Agent</strong>：VSCode SWE Agent &amp; Github PR bot。</li>
+            <li>
+              基于 RL 训练框架（OpenAI）进行后训练，设计 Prompt 与多维度 Reward 机制，训练面向
+              <strong>GitHub Copilot</strong> 工具集的 Agent 模型，在 <strong>SWE-bench</strong> 上取得世界第一。
+            </li>
+            <li>
+              使用 <strong>FastAPI + Relay</strong> 进行 Agent Serving；搭建 Web 调试平台，支持
+              <strong>Chain of Thought（CoT）</strong> 可视化。
+            </li>
+          </ul>
+        </div>
 
-        <section class="section" id="projects">
-          <h2>项目</h2>
-          <div class="project-grid">
-            <article class="project-card">
-              <h3>项目名称</h3>
-              <p>一句话说明项目是什么、解决了什么问题。</p>
-              <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
-            </article>
-            <article class="project-card">
-              <h3>另一个项目</h3>
-              <p>可以附上技术栈或你的角色，例如：独立开发 / 产品设计。</p>
-              <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
-            </article>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Azure AI Platform - ETL 工程师、数据科学家</div>
+            <div class="entry-meta">2021.10 – 2024.08&nbsp;&nbsp;微软北京</div>
           </div>
-        </section>
+          <ul>
+            <li>担任多个产品的数据处理与分析技术负责人，参与 <strong>Promptflow</strong> 从 0 到 1 建设。</li>
+            <li><strong>Promptflow</strong>：企业级 LLM 应用开发平台，搭建转化漏斗与核心指标体系。</li>
+            <li><strong>Azure AI Foundry</strong>：用户留存与活跃度分析，定义关键业务指标。</li>
+            <li><strong>Azure Machine Learning</strong>：优化 ETL 架构，提升数据处理效率。</li>
+            <li><strong>OLAP 数据平台</strong>：日志分析与错误诊断，支撑产品决策。</li>
+            <li><strong>欺诈检测</strong>：基于 AzureML 构建欺诈检测机制。</li>
+          </ul>
+        </div>
 
-        <section class="section" id="education">
-          <h2>教育背景</h2>
-          <div class="edu-item">
-            <div>
-              <h3>学校名称</h3>
-              <p>专业 · 学位</p>
-            </div>
-            <span class="timeline-date">2018 — 2022</span>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Azure ML Python SDK - 软件开发工程师</div>
+            <div class="entry-meta">2020.06 – 2021.10&nbsp;&nbsp;微软北京</div>
           </div>
-        </section>
-      </main>
+          <ul>
+            <li>开发 <strong>Azure ML Pipeline Component SDK</strong> 核心模块。</li>
+          </ul>
+        </div>
 
-      <footer class="footer">
-        <p>© <span id="year"></span> 你的名字 · Built with Vite</p>
-      </footer>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">诺基亚贝尔实验室 - 算法实习生</div>
+            <div class="entry-meta">2018.08 – 2018.10&nbsp;&nbsp;贝尔实验室</div>
+          </div>
+          <ul>
+            <li>足球比赛视频分析中的实时检测算法研发。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">项目经历</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">北航软件开发环境国家重点实验室 - 神经网络压缩</div>
+            <div class="entry-meta">2019.08 – 2020.07&nbsp;&nbsp;北京</div>
+          </div>
+          <ul>
+            <li>神经网络压缩与图像处理加速研究；构建基于局部敏感哈希（LSH）的车辆检索系统。</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">ULB CODE-IRIDIA 实验室 - 自然语言处理</div>
+            <div class="entry-meta">2019.01 – 2019.06&nbsp;&nbsp;布鲁塞尔</div>
+          </div>
+          <ul>
+            <li>对宝洁（P&amp;G）产品评论进行文本挖掘，包括主题提取与新颖性检测。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">相关能力</h2>
+        <ul class="skills">
+          <li>
+            <strong>技术</strong>：RL 后训练、AI Agent、RAG、大语言模型技术、企业级代码生成模型、ChatGPT 架构。
+          </li>
+          <li><strong>数据</strong>：数据分析、关键指标体系搭建、数据驱动决策。</li>
+          <li><strong>语言与其他</strong>：英语（高级）、法语（中高级）；视觉中国签约摄影师。</li>
+        </ul>
+      </section>
     </div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
